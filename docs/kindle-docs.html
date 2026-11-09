@@ -620,7 +620,7 @@ for a stat) and headings. <code>screen:update(spec)</code> redraws it in place. 
 are two ready-made ones: a pick from a list, and a yes or no. Opened from a bonfire's menu, the screen is back
 at that menu when it closes; <code>kindle.ui.title_entry("Hard Mode", "Its options.", open_options)</code> puts the same
 screen on the title's main menu.</p>
-<p>A longer screen can have tabs, as the game's own menus do: <code>tabs = {{title = "Enemies", rows = {...}}, {title = "Player", rows = {...}}}</code> in place of <code>rows</code>. LB and RB (Q and E, or a click on a tab's title) turn
+<p>A longer screen can have tabs, as the game's own menus do: <code>tabs = {{title = "Enemies", rows = {...}},  {title = "Player", rows = {...}}}</code> in place of <code>rows</code>. LB and RB (Q and E, or a click on a tab's title) turn
 them; <code>tab = 2</code> opens on the second, and <code>on_tab(index, title)</code> hears the player turn.</p>
 <h2 id="cookbook--draw-on-the-screen">Draw on the screen</h2>
 <p>Permissions: <code>ui</code>, <code>world</code></p>
@@ -689,7 +689,7 @@ or the player did and the fight reset).</p>
 <pre class="code"><code>kindle.items.set_name(<span class="s">&quot;Ember&quot;</span>, <span class="s">&quot;Spark of Kindle&quot;</span>)
 kindle.items.set_description(<span class="s">&quot;Ember&quot;</span>, <span class="s">&quot;Warm to the touch. Smells faintly of Lua.&quot;</span>)
 </code></pre>
-<p>The new name shows everywhere the game shows the item, and works in <code>items.give("Spark of Kindle")</code>. It's reverted when the mod unloads.</p>
+<p>The new name shows everywhere the game shows the item, and works in <code>items.give("Spark of  Kindle")</code>. It's reverted when the mod unloads.</p>
 <h2 id="cookbook--calm-an-enemy-down">Calm an enemy down</h2>
 <p>Permissions: <code>world</code></p>
 <pre class="code"><code><span class="c">-- The nearest enemy stops fighting: no target, AI off for 10 seconds.</span>
@@ -1744,7 +1744,7 @@ kindle.flags.on_set(kindle.flags.boss.iudex_gundyr, <span class="k">function</sp
 <tr><td><code>hks.on_act</code> returning false</td><td>blocks one action the behaviour script asks for (sprint, a variable write)</td><td><a href="https://github.com/khaelemw/kindle-examples/blob/main/ex-hks-movement/README.md" target="_blank" rel="noopener">hks movement</a>, <a href="https://github.com/khaelemw/kindle-examples/blob/main/ex-hard-mode/README.md" target="_blank" rel="noopener">hard mode</a></td></tr>
 <tr><td><code>hks.on_env</code> returning a value</td><td>changes an answer the script gets (a fall's height, a state)</td><td>hks movement</td></tr>
 <tr><td>the <code>animation</code> hook</td><td>plays a different animation, or none</td><td></td></tr>
-<tr><td><code>input.block_actions(true)</code></td><td>the player's buttons for actions (not menus or camera)</td><td><a href="https://github.com/khaelemw/kindle-examples/blob/main/ex-photo-mode/README.md" target="_blank" rel="noopener">photo mode</a></td></tr>
+<tr><td><code>input.block_actions(true)</code></td><td>the player's buttons for actions (not menus or camera)</td><td>-</td></tr>
 <tr><td>an edited behaviour script calling <code>kindle(name, ...)</code></td><td>anything the script does, with the mod answering</td><td><code>hks.on_call</code> in the API reference</td></tr>
 </tbody></table>
 </div><pre class="code"><code>kindle.on(<span class="s">&quot;animation&quot;</span>, <span class="k">function</span>(e)

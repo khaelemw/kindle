@@ -264,7 +264,7 @@ end)
 | `hks.on_act` returning false | blocks one action the behaviour script asks for (sprint, a variable write) | [hks movement](https://github.com/khaelemw/kindle-examples/blob/main/ex-hks-movement/README.md), [hard mode](https://github.com/khaelemw/kindle-examples/blob/main/ex-hard-mode/README.md) |
 | `hks.on_env` returning a value | changes an answer the script gets (a fall's height, a state) | hks movement |
 | the `animation` hook | plays a different animation, or none | |
-| `input.block_actions(true)` | the player's buttons for actions (not menus or camera) | [photo mode](https://github.com/khaelemw/kindle-examples/blob/main/ex-photo-mode/README.md) |
+| `input.block_actions(true)` | the player's buttons for actions (not menus or camera) | - |
 | an edited behaviour script calling `kindle(name, ...)` | anything the script does, with the mod answering | `hks.on_call` in the API reference |
 
 ```lua

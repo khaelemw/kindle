@@ -3,7 +3,7 @@ Kindle for Dark Souls III (version 1.15.2)
 
 Kindle runs mods written in Lua inside Dark Souls III. It comes with one mod, Bonfire Fate
 (every few minutes, a random cause paired with a random effect), as an example. Its README is
-in kindle\mods\bonfire-fate.
+in kindle\mods\bonfire-fate; its repo is https://github.com/khaelemw/kindle-bonfire-fate.
 
 More mods, each in its own repo with a zip to unzip into Game\kindle\mods:
 
@@ -15,8 +15,6 @@ More mods, each in its own repo with a zip to unzip into Game\kindle\mods:
                    https://github.com/khaelemw/kindle-practice-tool
   Run Timer        a speedrun clock with splits for bosses and bonfires
                    https://github.com/khaelemw/kindle-run-timer
-  Photo Mode       freeze the scene and fly the camera around it
-                   https://github.com/khaelemw/kindle-photo-mode
   Pickup Shuffle   the world's pickups trade places, from a seed
                    https://github.com/khaelemw/kindle-pickup-shuffle
   Co-op (beta)     play the whole game together

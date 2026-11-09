@@ -37,12 +37,11 @@ Each mod is its own repo with a release zip that unzips into `Game\kindle\mods`:
 
 | Mod | What it does |
 |---|---|
-| [Bonfire Fate](mods/bonfire-fate/README.md) | every few minutes, a random cause paired with a random effect (comes with Kindle) |
+| [Bonfire Fate](https://github.com/khaelemw/kindle-bonfire-fate) | every few minutes, a random cause paired with a random effect (comes with Kindle as an example, in [mods/](mods/bonfire-fate/README.md)) |
 | [Randomizer](https://github.com/khaelemw/kindle-randomizer) | items in new places (the game can always be finished) and enemies of other types |
 | [Chaos](https://github.com/khaelemw/kindle-chaos) | every so often something random happens for a while |
 | [Practice Tool](https://github.com/khaelemw/kindle-practice-tool) | save a spot with its enemies and go back to it |
 | [Run Timer](https://github.com/khaelemw/kindle-run-timer) | a speedrun clock with splits for bosses and bonfires |
-| [Photo Mode](https://github.com/khaelemw/kindle-photo-mode) | freeze the scene and fly the camera around it |
 | [Pickup Shuffle](https://github.com/khaelemw/kindle-pickup-shuffle) | the world's pickups trade places, from a seed |
 | [Co-op (beta)](https://github.com/khaelemw/kindle-coop) | play the whole game together |
 

@@ -41,8 +41,9 @@ Bonfire Fate comes with Kindle and is off until you switch it on: at the title s
 pause menu, choose **Mods**, open the **Mods** tab and turn **Bonfire Fate** on. It starts at once.
 Kindle Launcher's mod list does the same while the game is closed.
 
-To install a copy on its own, put this folder in the game's `Game\kindle\mods` folder, so you
-have `Game\kindle\mods\bonfire-fate\mod.toml`.
+It comes with [Kindle](https://github.com/khaelemw/kindle) as its example mod. A newer copy is in this
+repo's Releases: unzip `bonfire-fate.zip` into the game's `Game\kindle\mods` folder (replacing the old
+one), so you have `Game\kindle\mods\bonfire-fate\mod.toml`.
 
 ## Removing it
 
