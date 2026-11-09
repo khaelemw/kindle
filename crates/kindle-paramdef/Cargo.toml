@@ -1,0 +1,10 @@
+[package]
+name = "kindle-paramdef"
+description = "Parses FromSoftware PARAMDEF XML files and computes field layouts for by-name param access"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+roxmltree.workspace = true
+

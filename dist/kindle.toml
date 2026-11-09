@@ -1,0 +1,64 @@
+# Kindle settings. Restart the game after changing these.
+
+[runtime]
+# Reload a mod as soon as one of its files is saved.
+hot_reload = true
+
+# Let `kindle console` / `kindle run` connect (127.0.0.1 only). Off by default: any program on
+# this PC could run Lua in the game through it. Turn it on while you write mods.
+console = false
+console_port = 27850
+
+# debug | info | warn | error
+log_level = "info"
+
+# A single script call (an event handler, timer, console line) that runs longer than
+# this is aborted and the mod is stopped, so a bug can't freeze the game. Counted in the
+# time the script itself runs (a stall of the PC meanwhile doesn't count).
+script_time_limit_ms = 200
+
+# Load no mods this session. Holding Shift while the game starts (until the title screen)
+# does the same, for when a mod keeps the game from loading.
+safe_mode = false
+
+# Copies of your saves kept in kindle\backups, made each time the game starts with mods
+# (only when the saves changed since the last copy). 0 turns this off.
+save_backups = 10
+
+# Skip the Bandai Namco and FromSoftware logos when the game starts.
+skip_logos = true
+
+[overlay]
+# Kindle's in-game screens: the Mods screen, banners and toasts, and the developer overlay.
+enabled = true
+
+# The developer overlay: console, mods, player, flags, params, log and Find, opened with
+# toggle_key. Also switched in game (Mods > Kindle) and in the launcher.
+developer = false
+
+# Opens/closes the developer overlay: F1-F12, Insert, Home, End, Delete, PageUp, PageDown,
+# Backquote. While it's open the game ignores keyboard, mouse and controller input.
+toggle_key = "F1"
+
+# Text size multiplier (1.0 = ImGui default).
+font_scale = 1.5
+
+# Add a "Mods" entry to the game's title menu and pause menu that opens the Mods screen.
+game_menus = true
+
+[coop]
+# The port the host takes players on (TCP). To play over the internet, the host forwards this
+# port on its router to its PC, and allows Dark Souls III through Windows Firewall.
+port = 27860
+# The host's internet address (what a "what's my IP" page shows), so its session codes work
+# over the internet, or a dynamic DNS name that follows it (e.g. "myname.duckdns.org", looked
+# up again every 5 minutes). Empty: codes work only on the host's own network.
+public_address = ""
+
+[developer]
+# Raw access for mods you're developing: reading the game's memory, tracing its code, writing
+# files anywhere. Mods from others never need it: Kindle's own functions can change the game
+# but never reach your PC; raw access could. While any mod has it, the game says so on screen.
+raw = false
+# The mods that get raw access when raw is on, by their mod.toml id. E.g. ["my-research-mod"].
+raw_mods = []

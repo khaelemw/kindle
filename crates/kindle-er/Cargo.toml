@@ -1,0 +1,21 @@
+[package]
+name = "kindle-er"
+description = "Kindle for Elden Ring: its runtime (Kindle's core with the game's params so far; in the game it checks the build, finds the managers and runs the mods on Kindle's own frame)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[lib]
+# Its own name: two `kindle` libraries in one workspace would write the same kindle.dll.
+name = "kindle_er"
+crate-type = ["cdylib"]
+
+[dependencies]
+hudhook = { version = "0.9", default-features = false, features = ["dx12", "imgui-tables-api"] }
+ilhook = "2"
+kindle-core.workspace = true
+kindle-paramdef.workspace = true
+mlua.workspace = true
+windows.workspace = true
+

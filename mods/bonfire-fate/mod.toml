@@ -1,0 +1,30 @@
+[mod]
+id = "bonfire-fate"
+name = "Bonfire Fate"
+version = "1.0.0"
+api = 1
+author = "Kindle"
+description = "Every few minutes fate pairs a random cause with a random effect."
+
+[permissions]
+modules = ["player", "ui", "items", "world", "params"]
+
+[settings.interval]
+type = "int"
+label = "Fate changes every (seconds)"
+description = "How long each fate lasts before a new one is rolled."
+default = 120
+min = 30
+max = 600
+
+[settings.banes]
+type = "bool"
+label = "Curses"
+description = "Some fates are curses: lose souls, slowed, stamina drained, lose HP."
+default = true
+
+[settings.banner]
+type = "bool"
+label = "Big banner"
+description = "Announce each new fate with a banner (otherwise a small toast)."
+default = true

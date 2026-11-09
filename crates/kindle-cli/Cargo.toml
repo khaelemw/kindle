@@ -1,0 +1,22 @@
+[package]
+name = "kindle-cli"
+description = "Kindle command-line tool: live console into the game, new mods, checking and packing mods"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "kindle-cli"
+path = "src/main.rs"
+
+[dependencies]
+kindle-launch.workspace = true
+kindle-manifest.workspace = true
+mlua.workspace = true
+zip.workspace = true
+
+[features]
+# The games this build is for: a release builds one (--no-default-features --features ds3).
+default = ["ds3", "er"]
+ds3 = []
+er = []

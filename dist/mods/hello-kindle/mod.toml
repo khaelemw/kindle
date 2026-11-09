@@ -1,0 +1,10 @@
+[mod]
+id = "hello-kindle"
+name = "Hello Kindle"
+version = "0.1.0"
+author = "Kindle"
+description = "Example mod: events, timers, flags, items, player stats and params."
+api = 1
+
+[permissions]
+modules = ["flags", "items", "player", "params", "text", "ui"]

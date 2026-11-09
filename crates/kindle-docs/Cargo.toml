@@ -1,0 +1,11 @@
+[package]
+name = "kindle-docs"
+description = "Generates Kindle's API reference (docs/reference) from the Lua type stubs"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+pulldown-cmark = { version = "0.13.4", default-features = false, features = ["html"] }
+serde_json.workspace = true

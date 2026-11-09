@@ -1,0 +1,26 @@
+[workspace]
+resolver = "2"
+members = ["crates/kindle-paramdef", "crates/kindle-manifest", "crates/kindle-core", "crates/kindle-ds3", "crates/kindle-er", "crates/kindle-launch", "crates/kindle-cli", "crates/kindle-launcher", "crates/kindle-docs", "crates/kindle-proxy"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+
+[workspace.dependencies]
+kindle-paramdef = { path = "crates/kindle-paramdef" }
+kindle-manifest = { path = "crates/kindle-manifest" }
+kindle-core = { path = "crates/kindle-core" }
+kindle-launch = { path = "crates/kindle-launch" }
+mlua = { version = "0.12", features = ["lua54", "vendored", "send"] }
+notify = "8"
+roxmltree = "0.20"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+zip = { version = "2", default-features = false, features = ["deflate"] }
+toml = { version = "0.9", features = ["preserve_order"] }
+windows = { version = "0.61", features = ["Win32_Foundation", "Win32_Security", "Win32_System_LibraryLoader", "Win32_UI_WindowsAndMessaging", "Win32_System_ProcessStatus", "Win32_System_Threading", "Win32_System_Diagnostics_Debug", "Win32_System_Diagnostics_ToolHelp", "Win32_System_Memory", "Win32_System_Kernel", "Win32_System_SystemInformation", "Win32_Storage_FileSystem", "Win32_System_IO", "Win32_UI_Input_KeyboardAndMouse", "Win32_UI_Shell", "Win32_UI_Shell_Common", "Win32_System_Com", "Win32_System_Registry", "Win32_System_DataExchange"] }
+
+[profile.release]
+panic = "unwind"
+debug = "line-tables-only"

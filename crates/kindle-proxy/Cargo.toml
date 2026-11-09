@@ -1,0 +1,19 @@
+[package]
+name = "kindle-proxy"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "dinput8.dll that loads Kindle: for starting the game from Steam (and on Linux through Proton)"
+
+[lib]
+name = "dinput8"
+crate-type = ["cdylib"]
+
+[dependencies]
+windows.workspace = true
+
+[features]
+# The games this build is for: a release builds one (--no-default-features --features ds3).
+default = ["ds3", "er"]
+ds3 = []
+er = []
